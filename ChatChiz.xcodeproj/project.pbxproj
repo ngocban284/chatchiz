@@ -23,6 +23,7 @@
 		A72E916028CA3376001FE2E3 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72E915F28CA3376001FE2E3 /* VideoPlayerViewController.swift */; };
 		A72E916228CA33F5001FE2E3 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72E916128CA33F5001FE2E3 /* NewConversationViewController.swift */; };
 		A72E916428CA341D001FE2E3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72E916328CA341D001FE2E3 /* ProfileViewController.swift */; };
+		A72F5A8928CAF2D500DE4BAE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72F5A8828CAF2D400DE4BAE /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		A72E915F28CA3376001FE2E3 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		A72E916128CA33F5001FE2E3 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		A72E916328CA341D001FE2E3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A72F5A8828CAF2D400DE4BAE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,9 +146,8 @@
 		A72E915228CA2F15001FE2E3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A7C62D6328CAD86000977BC3 /* Login */,
 				A72E912228CA2EB1001FE2E3 /* ConversationsViewController.swift */,
-				A72E915928CA32DA001FE2E3 /* LoginViewController.swift */,
-				A72E915B28CA3316001FE2E3 /* RegisterViewController.swift */,
 				A72E915D28CA3357001FE2E3 /* PhotoViewerViewController.swift */,
 				A72E915F28CA3376001FE2E3 /* VideoPlayerViewController.swift */,
 				A72E916128CA33F5001FE2E3 /* NewConversationViewController.swift */,
@@ -183,6 +184,7 @@
 			children = (
 				A72E911E28CA2EB1001FE2E3 /* AppDelegate.swift */,
 				A72E912028CA2EB1001FE2E3 /* SceneDelegate.swift */,
+				A72F5A8828CAF2D400DE4BAE /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -194,6 +196,15 @@
 				A72E912C28CA2EB1001FE2E3 /* LaunchScreen.storyboard */,
 			);
 			path = Storybroads;
+			sourceTree = "<group>";
+		};
+		A7C62D6328CAD86000977BC3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A72E915928CA32DA001FE2E3 /* LoginViewController.swift */,
+				A72E915B28CA3316001FE2E3 /* RegisterViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +347,7 @@
 				A72E916028CA3376001FE2E3 /* VideoPlayerViewController.swift in Sources */,
 				A72E916228CA33F5001FE2E3 /* NewConversationViewController.swift in Sources */,
 				A72E915A28CA32DA001FE2E3 /* LoginViewController.swift in Sources */,
+				A72F5A8928CAF2D500DE4BAE /* Extensions.swift in Sources */,
 				A72E912928CA2EB1001FE2E3 /* ChatChiz.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,8 +530,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -545,8 +559,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
