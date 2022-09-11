@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
 
@@ -31,7 +32,7 @@ class RegisterViewController: UIViewController {
         let field = UITextField()
         field.autocapitalizationType = .none
         field.autocorrectionType = .no
-        field.returnKeyType = .done
+        field.returnKeyType = .continue
         field.layer.cornerRadius = 12
         field.layer.borderWidth = 1
         field.layer.borderColor = UIColor.gray.cgColor
@@ -39,7 +40,7 @@ class RegisterViewController: UIViewController {
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
         field.backgroundColor = .white
-        field.isSecureTextEntry = true
+        field.isSecureTextEntry = false
         return field
     }()
     
@@ -47,7 +48,7 @@ class RegisterViewController: UIViewController {
         let field = UITextField()
         field.autocapitalizationType = .none
         field.autocorrectionType = .no
-        field.returnKeyType = .done
+        field.returnKeyType = .continue
         field.layer.cornerRadius = 12
         field.layer.borderWidth = 1
         field.layer.borderColor = UIColor.gray.cgColor
@@ -55,7 +56,7 @@ class RegisterViewController: UIViewController {
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
         field.backgroundColor = .white
-        field.isSecureTextEntry = true
+        field.isSecureTextEntry = false
         return field
     }()
     
@@ -208,6 +209,15 @@ class RegisterViewController: UIViewController {
         }
         
         //Firebase log in
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { AuthDataResult, Error in
+            guard let result = AuthDataResult, Error == nil else{
+                print("Error when creating user!")
+                return
+            }
+            
+            let user  = result.user
+            print("Created user : \(user)")
+        }
     }
     
     func alertUserLoginError(   ){

@@ -1,0 +1,6 @@
+framework module Pods_ChatChiz_ChatChizUITests {
+  umbrella header "Pods-ChatChiz-ChatChizUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
