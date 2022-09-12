@@ -149,13 +149,13 @@
 		A72E911D28CA2EB1001FE2E3 /* ChatChiz */ = {
 			isa = PBXGroup;
 			children = (
-				A7CF350828CE129A00E6D53F /* GoogleService-Info.plist */,
 				A72E915628CA2F37001FE2E3 /* Resources */,
 				A72E915528CA2F28001FE2E3 /* ViewModels */,
 				A72E915428CA2F22001FE2E3 /* Models */,
 				A72E915328CA2F1E001FE2E3 /* Views */,
 				A72E915228CA2F15001FE2E3 /* Controllers */,
 				A72E912F28CA2EB1001FE2E3 /* Info.plist */,
+				A7CF350828CE129A00E6D53F /* GoogleService-Info.plist */,
 				A72E912728CA2EB1001FE2E3 /* ChatChiz.xcdatamodeld */,
 			);
 			path = ChatChiz;
@@ -182,11 +182,11 @@
 			isa = PBXGroup;
 			children = (
 				A7C62D6328CAD86000977BC3 /* Login */,
+				A72E916128CA33F5001FE2E3 /* NewConversationViewController.swift */,
 				A72E912228CA2EB1001FE2E3 /* ConversationsViewController.swift */,
+				A72E916328CA341D001FE2E3 /* ProfileViewController.swift */,
 				A72E915D28CA3357001FE2E3 /* PhotoViewerViewController.swift */,
 				A72E915F28CA3376001FE2E3 /* VideoPlayerViewController.swift */,
-				A72E916128CA33F5001FE2E3 /* NewConversationViewController.swift */,
-				A72E916328CA341D001FE2E3 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

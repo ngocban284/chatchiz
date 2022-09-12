@@ -15,7 +15,7 @@ struct ChatAppUser{
     
     var safeEmail:String{
         var safeEmail = emailAddress.replacingOccurrences(of: ".", with: "-")
-        safeEmail.replacingOccurrences(of: "@", with: "-")
+        safeEmail = safeEmail.replacingOccurrences(of: "@", with: "-")
         return safeEmail
     }
 }
@@ -32,9 +32,7 @@ extension DatabaseManager{
     /// validate new user
     public func userExists(with email:String,completion:@escaping((Bool)->Void)){
         var safeEmail = email.replacingOccurrences(of: ".", with: "-")
-        safeEmail.replacingOccurrences(of: "@", with: "-")
-        
-        
+        safeEmail = safeEmail.replacingOccurrences(of: "@", with: "-")
         database.child(safeEmail).observeSingleEvent(of: .value,with:{
             DataSnapshot in
             
