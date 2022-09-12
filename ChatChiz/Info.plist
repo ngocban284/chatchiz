@@ -37,5 +37,21 @@
 			</array>
 		</dict>
 	</dict>
+    
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>fb477941607306620</string>
+      </array>
+      </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>477941607306620</string>
+    <key>FacebookClientToken</key>
+    <string>489cc34419c478d269d1f64eb7623e4a</string>
+    <key>FacebookDisplayName</key>
+    <string>Chat Chiz</string>
 </dict>
 </plist>
